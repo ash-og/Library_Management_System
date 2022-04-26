@@ -34,6 +34,21 @@ class Member(object):
         return "{} is a {} member. Their closest branch is {}.".format(self.name, self.type, self.closest_branch)
 
 
+class Item(object):
+    """Items class to hold items available to borrow from Libraries"""
+
+    def __init__(self, title="", description="", genre="", date="", language="", awards="", notes=""):
+        self.title = title
+        self.description = description
+        self.genre = genre
+        self.release_date = date
+        self.language = language
+        self.awards = awards
+        self.notes = notes
+
+    def __str__(self):
+        return "{} is from the {} genre. It was released {}.".format(self.title, self.genre, self.release_date)
+
 
 
 # Main Scope
@@ -44,3 +59,6 @@ print(Library1)
 
 Member1 = Member(name="Aisling Young", m_type="Adult", branch="Carlow Library")
 print(Member1)
+
+Item1 = Item("Harry Potter", "A tale from the Harry Potter wizarding world", "Children's Fiction", "Dec 2001")
+print(Item1)
