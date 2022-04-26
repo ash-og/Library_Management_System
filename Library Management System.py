@@ -2,13 +2,13 @@
 
 class Library(object):
     """Library class"""
-    def __init__(self, libid=0, name="", location="", phone="", email="", website=""):
-        self.libID = libid
+    def __init__(self, name="", location="", phone="", email="", website=""):
         self.name = name
         self.location = location
         self.phone = phone
         self.email = email
         self.website = website
+        self.ID = None
 
     def __str__(self):
         return "{} is located at {}.\nYou can contact them via {} or {}"\
@@ -18,7 +18,7 @@ class Library(object):
 class Member(object):
     """Library Members class"""
 
-    def __init__(self, m_id=0, name="", m_type="", dob="", address="", phone="", email="", branch="",
+    def __init__(self, m_id: int, name="", m_type="", dob="", address="", phone="", email="", branch="",
                  history=None):
         self.ID = m_id
         self.name = name
@@ -93,30 +93,3 @@ class Digital(Item):
 
 
 # Main Scope
-
-
-Library1 = Library(name="Carlow Library", location="Tullow Street, Carlow", phone="0505-12345", email="info@carlowlibrary.ie")
-print(Library1)
-
-print("\n")
-
-Member1 = Member(name="Aisling Young", m_type="Adult", branch="Carlow Library")
-print(Member1)
-
-print("\n")
-
-Item1 = Item("Harry Potter", "A tale from the Harry Potter wizarding world", "Children's Fiction", "Dec 2001")
-print(Item1)
-
-print("\n")
-
-Book1 = Book("Consolations", "David Whyte's third volume of poetry", "Poetry", "Dec 2020", author="David Whyte")
-print(Book1)
-
-print("\n")
-
-Article1 = Article("Study of Multicore processors: Advantages and Challenges", author="Vinayak Shinde")
-print(Article1)
-
-Digital1 = Digital("Pulp Fiction", "Quentin Tarantino's Masterpiece", "Action", "March 1992", "English", media_type="Movie", performers="Samuel L Jackson, Uma Thurman")
-print(Digital1)
