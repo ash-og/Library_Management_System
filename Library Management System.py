@@ -49,6 +49,23 @@ class Item(object):
     def __str__(self):
         return "{} is from the {} genre. It was released {}.".format(self.title, self.genre, self.release_date)
 
+class Book(Item):
+    """Book is a subclass of Item"""
+
+    def __init__(self, title="", description="", genre="", date="", language="", awards="", notes="", isbn="", author="", publisher=""):
+
+        Item.__init__(self, title, description, genre, date, language, awards, notes)
+        self.ISBN = isbn
+        self.author = author
+        self.publisher = publisher
+
+    def __str__(self):
+        result = "{} is a {} book by {}\n".format(self.title, self.genre, self.author)
+        result += "It is " + self.description + "\n"
+        result += "It was released " + self.release_date
+        return result
+
+
 
 
 # Main Scope
@@ -57,8 +74,20 @@ class Item(object):
 Library1 = Library(name="Carlow Library", location="Tullow Street, Carlow", phone="0505-12345", email="info@carlowlibrary.ie")
 print(Library1)
 
+print("\n")
+
 Member1 = Member(name="Aisling Young", m_type="Adult", branch="Carlow Library")
 print(Member1)
 
+print("\n")
+
 Item1 = Item("Harry Potter", "A tale from the Harry Potter wizarding world", "Children's Fiction", "Dec 2001")
 print(Item1)
+
+print("\n")
+
+Book1 = Book("Consolations", "David Whyte's third volume of poetry", "Poetry", "Dec 2020", author="David Whyte")
+print(Book1)
+
+print("\n")
+
