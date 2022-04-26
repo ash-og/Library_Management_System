@@ -65,7 +65,31 @@ class Book(Item):
         result += "It was released " + self.release_date
         return result
 
+class Article(Item):
+    """Journal articles as a subclass of Item"""
 
+    def __init__(self, title="", description="", genre="", date="", language="", awards="", notes="", author="", abstract="", issn=""):
+        Item.__init__(self, title, description, genre, date, language, awards, notes)
+        self.author = author
+        self.abstract = abstract
+        self.ISSN = issn
+
+    def __str__(self):
+        result = "\""+ self.title + "\"" + " is an article by " + self.author + ".\n"
+        return result
+
+
+class Digital(Item):
+    """Digital Media as a subclass of item"""
+    def __init__(self, title="", description="", genre="", date="", language="", awards="", notes="", media_type="", performers=""):
+        Item.__init__(self, title, description, genre, date, language, awards, notes)
+        self.media_type = media_type
+        self.performers = performers
+
+    def __str__(self):
+        result = self.title + " is a " + self.media_type + "\n"
+        result += "It is " + self.description
+        return result
 
 
 # Main Scope
@@ -91,3 +115,8 @@ print(Book1)
 
 print("\n")
 
+Article1 = Article("Study of Multicore processors: Advantages and Challenges", author="Vinayak Shinde")
+print(Article1)
+
+Digital1 = Digital("Pulp Fiction", "Quentin Tarantino's Masterpiece", "Action", "March 1992", "English", media_type="Movie", performers="Samuel L Jackson, Uma Thurman")
+print(Digital1)
