@@ -48,6 +48,7 @@ def MemberMenu():
 # Main Scope
 
 def Main():
+
     # Prompting user to choose an option
      while True:
         user_input = input("Which user are you?\n"

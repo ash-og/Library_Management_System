@@ -1,0 +1,232 @@
+<NEW DATASET>					
+<BOOKS>					
+1	Da Vinci Code,The	F2.1 Crime, Thriller & Adventure	Monday, March 1, 2004	Brown, Dan	Transworld Grp
+2	Harry Potter and the Deathly Hallows	Y2.1 Children's Fiction	Saturday, July 21, 2007	Rowling, J.K.	Bloomsbury Grp
+3	Harry Potter and the Philosopher's Stone	Y2.1 Children's Fiction	Thursday, June 26, 1997	Rowling, J.K.	Bloomsbury Grp
+4	Harry Potter and the Order of the Phoenix	Y2.1 Children's Fiction	Saturday, April 26, 2003	Rowling, J.K.	Bloomsbury Grp
+5	Fifty Shades of Grey	F2.5 Romance & Sagas	Thursday, April 12, 2012	James, E. L.	Random House Grp
+6	Harry Potter and the Goblet of Fire	Y2.1 Children's Fiction	Saturday, March 24, 2001	Rowling, J.K.	Bloomsbury Grp
+7	Harry Potter and the Chamber of Secrets	Y2.1 Children's Fiction	Saturday, January 2, 1999	Rowling, J.K.	Bloomsbury Grp
+8	Harry Potter and the Prisoner of Azkaban	Y2.1 Children's Fiction	Saturday, April 1, 2000	Rowling, J.K.	Bloomsbury Grp
+9	Angels and Demons	F2.1 Crime, Thriller & Adventure	Tuesday, July 1, 2003	Brown, Dan	Transworld Grp
+10	Harry Potter and the Half-blood Prince:Children's Edition	Y2.1 Children's Fiction	Saturday, April 9, 2005	Rowling, J.K.	Bloomsbury Grp
+11	Fifty Shades Darker	F2.5 Romance & Sagas	Thursday, April 26, 2012	James, E. L.	Random House Grp
+12	Twilight	Y2.2 Young Adult Fiction	Saturday, December 9, 2006	Meyer, Stephenie	Little, Brown Book Grp
+13	Girl with the Dragon Tattoo,The:Millennium Trilogy	F2.1 Crime, Thriller & Adventure	Thursday, July 24, 2008	Larsson, Stieg	Quercus Grp
+14	Fifty Shades Freed	F2.5 Romance & Sagas	Thursday, April 26, 2012	James, E. L.	Random House Grp
+15	Lost Symbol,The	F2.1 Crime, Thriller & Adventure	Saturday, April 25, 2009	Brown, Dan	Transworld Grp
+16	New Moon	Y2.2 Young Adult Fiction	Thursday, September 6, 2007	Meyer, Stephenie	Little, Brown Book Grp
+17	Deception Point	F2.1 Crime, Thriller & Adventure	Saturday, May 1, 2004	Brown, Dan	Transworld Grp
+18	Eclipse	Y2.2 Young Adult Fiction	Friday, June 27, 2008	Meyer, Stephenie	Little, Brown Book Grp
+19	Lovely Bones,The	F1.1 General & Literary Fiction	Friday, June 6, 2003	Sebold, Alice	Pan Macmillan Grp
+20	Curious Incident of the Dog in the Night-time,The	F1.1 General & Literary Fiction	Thursday, April 1, 2004	Haddon, Mark	Random House Grp
+21	Digital Fortress	F2.1 Crime, Thriller & Adventure	Friday, March 5, 2004	Brown, Dan	Transworld Grp
+22	Short History of Nearly Everything,A	T8.0 Popular Science	Tuesday, June 1, 2004	Bryson, Bill	Transworld Grp
+23	Girl Who Played with Fire,The:Millennium Trilogy	F2.1 Crime, Thriller & Adventure	Thursday, July 9, 2009	Larsson, Stieg	Quercus Grp
+24	Breaking Dawn	Y2.2 Young Adult Fiction	Saturday, May 24, 2008	Meyer, Stephenie	Little, Brown Book Grp
+25	Very Hungry Caterpillar,The:The Very Hungry Caterpillar	Y1.3 Picture Books	Thursday, September 29, 1994	Carle, Eric	Penguin Grp
+26	Gruffalo,The	Y1.3 Picture Books	Saturday, August 21, 1999	Donaldson, Julia	Pan Macmillan Grp
+27	Jamie's 30-Minute Meals	T16.0 Food & Drink: General	Thursday, September 30, 2010	Oliver, Jamie	Penguin Grp
+28	Kite Runner,The	F1.1 General & Literary Fiction	Saturday, April 17, 2004	Hosseini, Khaled	Bloomsbury Grp
+29	One Day	F1.1 General & Literary Fiction	Thursday, February 4, 2010	Nicholls, David	Hodder & Stoughton Grp
+30	Thousand Splendid Suns,A	F1.1 General & Literary Fiction	Tuesday, May 22, 2007	Hosseini, Khaled	Bloomsbury Grp
+31	Girl Who Kicked the Hornets' Nest,The:Millennium Trilogy	F2.1 Crime, Thriller & Adventure	Saturday, January 23, 2010	Larsson, Stieg	Quercus Grp
+32	Time Traveler's Wife,The	F1.1 General & Literary Fiction	Saturday, May 29, 2004	Niffenegger, Audrey	Random House Grp
+33	Atonement	F1.1 General & Literary Fiction	Thursday, May 2, 2002	McEwan, Ian	Random House Grp
+34	Bridget Jones's Diary:A Novel	F1.1 General & Literary Fiction	Friday, June 20, 1997	Fielding, Helen	Pan Macmillan Grp
+35	World According to Clarkson,The	T13.0 Humour: Collections & General	Thursday, May 26, 2005	Clarkson, Jeremy	Penguin Grp
+36	Captain Corelli's Mandolin	F1.1 General & Literary Fiction	Thursday, June 1, 1995	Bernieres, Louis de	Random House Grp
+37	Sound of Laughter,The	T4.0A Autobiography: General	Thursday, October 5, 2006	Kay, Peter	Random House Grp
+38	Life of Pi	F1.1 General & Literary Fiction	Saturday, May 17, 2003	Martel, Yann	Canongate Grp
+39	Billy Connolly	T4.1 Biography: The Arts	Saturday, June 29, 2002	Stephenson, Pamela	HarperCollins Grp
+40	Child Called It,A	T4.0A Autobiography: General	Thursday, January 4, 2001	Pelzer, Dave	Orion Grp
+41	Gruffalo's Child,The	Y1.3 Picture Books	Friday, September 2, 2005	Donaldson, Julia	Pan Macmillan Grp
+42	Angela's Ashes:A Memoir of a Childhood	T4.0A Autobiography: General	Tuesday, May 6, 1997	McCourt, Frank	HarperCollins Grp
+43	Birdsong	F1.1 General & Literary Fiction	Monday, July 18, 1994	Faulks, Sebastian	Random House Grp
+44	Northern Lights:His Dark Materials S.	Y2.2 Young Adult Fiction	Friday, October 23, 1998	Pullman, Philip	Scholastic Ltd. Grp
+45	Labyrinth	F1.1 General & Literary Fiction	Saturday, July 16, 2005	Mosse, Kate	Orion Grp
+46	Harry Potter and the Half-blood Prince	F2.2 Science Fiction & Fantasy	Saturday, April 9, 2005	Rowling, J.K.	Bloomsbury Grp
+47	Help,The	F1.1 General & Literary Fiction	Thursday, May 13, 2010	Stockett, Kathryn	Penguin Grp
+48	Man and Boy	F1.1 General & Literary Fiction	Monday, March 6, 2000	Parsons, Tony	HarperCollins Grp
+49	Memoirs of a Geisha	F1.1 General & Literary Fiction	Thursday, June 4, 1998	Golden, Arthur	Random House Grp
+50	No.1 Ladies' Detective Agency,The:No.1 Ladies' Detective Agency S.	F2.1 Crime, Thriller & Adventure	Thursday, June 5, 2003	McCall Smith, Alexander	Little, Brown Book Grp
+51	Island,The	F1.1 General & Literary Fiction	Monday, April 10, 2006	Hislop, Victoria	Headline Grp
+52	PS, I Love You	F1.1 General & Literary Fiction	Saturday, March 27, 2004	Ahern, Cecelia	HarperCollins Grp
+53	You are What You Eat:The Plan That Will Change Your Life	T9.4 Fitness & Diet	Thursday, June 17, 2004	McKeith, Gillian	Penguin Grp
+54	Shadow of the Wind,The	F1.1 General & Literary Fiction	Wednesday, October 5, 2005	Zafon, Carlos Ruiz	Orion Grp
+55	Tales of Beedle the Bard,The	Y2.1 Children's Fiction	Saturday, August 2, 2008	Rowling, J.K.	Bloomsbury Grp
+56	Broker,The	F2.1 Crime, Thriller & Adventure	Saturday, August 27, 2005	Grisham, John	Random House Grp
+57	Dr. Atkins' New Diet Revolution:The No-hunger, Luxurious Weight Loss P	T9.4 Fitness & Diet	Thursday, January 2, 2003	Atkins, Robert C.	Random House Grp
+58	Subtle Knife,The:His Dark Materials S.	Y2.2 Young Adult Fiction	Friday, October 16, 1998	Pullman, Philip	Scholastic Ltd. Grp
+59	Eats, Shoots and Leaves:The Zero Tolerance Approach to Punctuation	T2.1 Usage & Writing Guides	Thursday, November 6, 2003	Truss, Lynne	Profile Books Group
+60	Delia's How to Cook:(Bk.1)	T16.0 Food & Drink: General	Monday, October 12, 1998	Smith, Delia	Random House Grp
+61	Chocolat	F1.1 General & Literary Fiction	Thursday, March 2, 2000	Harris, Joanne	Transworld Grp
+62	Boy in the Striped Pyjamas,The	Y2.2 Young Adult Fiction	Thursday, September 11, 2008	Boyne, John	Random House Childrens Books G
+63	My Sister's Keeper	F1.1 General & Literary Fiction	Saturday, June 19, 2004	Picoult, Jodi	Hodder & Stoughton Grp
+64	Amber Spyglass,The:His Dark Materials S.	Y2.2 Young Adult Fiction	Friday, September 14, 2001	Pullman, Philip	Scholastic Ltd. Grp
+65	To Kill a Mockingbird	F1.1 General & Literary Fiction	Thursday, October 5, 1989	Lee, Harper	Random House Grp
+66	Men are from Mars, Women are from Venus:A Practical Guide for Improvin	T8.7 Popular Culture & Media: General Interest	Sunday, August 1, 1993	Gray, John	HarperCollins Grp
+67	Dear Fatty	T4.1A Autobiography: The Arts	Thursday, October 9, 2008	French, Dawn	Random House Grp
+68	Short History of Tractors in Ukrainian,A	F1.1 General & Literary Fiction	Thursday, March 2, 2006	Lewycka, Marina	Penguin Grp
+69	Hannibal	F2.1 Crime, Thriller & Adventure	Thursday, May 18, 2000	Harris, Thomas	Random House Grp
+70	Lord of the Rings,The	F2.2 Science Fiction & Fantasy	Monday, June 5, 1995	Tolkien, J. R. R.	HarperCollins Grp
+71	Stupid White Men:...and Other Sorry Excuses for the State of the Natio	T7.5 Current Affairs & Issues	Thursday, October 3, 2002	Moore, Michael	Penguin Grp
+72	Interpretation of Murder,The	F2.1 Crime, Thriller & Adventure	Monday, January 15, 2007	Rubenfeld, Jed	Headline Grp
+73	Sharon Osbourne Extreme:My Autobiography	T4.1A Autobiography: The Arts	Monday, October 3, 2005	Osbourne, Sharon	Little, Brown Book Grp
+74	Alchemist,The:A Fable About Following Your Dream	F1.1 General & Literary Fiction	Saturday, January 3, 1998	Coelho, Paulo	HarperCollins Grp
+75	At My Mother's Knee ...:and Other Low Joints	T4.1A Autobiography: The Arts	Wednesday, September 24, 2008	O'Grady, Paul	Transworld Grp
+76	Notes from a Small Island	T8.5 Travel Writing	Thursday, August 1, 1996	Bryson, Bill	Transworld Grp
+77	Return of the Naked Chef,The	T16.0 Food & Drink: General	Thursday, March 30, 2000	Oliver, Jamie	Penguin Grp
+78	Bridget Jones: The Edge of Reason	F1.1 General & Literary Fiction	Thursday, June 15, 2000	Fielding, Helen	Pan Macmillan Grp
+79	Jamie's Italy	T16.1 National & Regional Cuisine	Monday, October 3, 2005	Oliver, Jamie	Penguin Grp
+80	I Can Make You Thin	T9.4 Fitness & Diet	Monday, January 17, 2005	McKenna, Paul	Transworld Grp
+81	Down Under	T8.5 Travel Writing	Saturday, May 5, 2001	Bryson, Bill	Transworld Grp
+82	Summons,The	F2.1 Crime, Thriller & Adventure	Saturday, September 28, 2002	Grisham, John	Random House Grp
+83	Small Island	F1.1 General & Literary Fiction	Monday, September 13, 2004	Levy, Andrea	Headline Grp
+84	Nigella Express	T16.0 Food & Drink: General	Thursday, September 6, 2007	Lawson, Nigella	Random House Grp
+85	Brick Lane	F1.1 General & Literary Fiction	Saturday, May 1, 2004	Ali, Monica	Transworld Grp
+86	Memory Keeper's Daughter,The	F1.1 General & Literary Fiction	Saturday, April 7, 2007	Edwards, Kim	Penguin Grp
+87	Room on the Broom	Y1.3 Picture Books	Friday, September 20, 2002	Donaldson, Julia	Pan Macmillan Grp
+88	About a Boy	F1.1 General & Literary Fiction	Thursday, April 4, 2002	Hornby, Nick	Penguin Grp
+89	My Booky Wook	T4.1A Autobiography: The Arts	Thursday, November 15, 2007	Brand, Russell	Hodder & Stoughton Grp
+90	God Delusion,The	T8.0 Popular Science	Monday, May 21, 2007	Dawkins, Richard	Transworld Grp
+91	"Beano" Annual,The	Y3.1 Children's Annuals	Wednesday, September 1, 2004	Multiple	D.C. Thomson Grp
+92	White Teeth	F1.1 General & Literary Fiction	Thursday, January 25, 2001	Smith, Zadie	Penguin Grp
+93	House at Riverton,The	F1.1 General & Literary Fiction	Friday, June 15, 2007	Morton, Kate	Pan Macmillan Grp
+94	Book Thief,The	F1.1 General & Literary Fiction	Saturday, September 8, 2007	Zusak, Markus	Transworld Grp
+95	Nights of Rain and Stars	F1.1 General & Literary Fiction	Wednesday, June 29, 2005	Binchy, Maeve	Orion Grp
+96	Ghost,The	F1.1 General & Literary Fiction	Thursday, July 3, 2008	Harris, Robert	Random House Grp
+97	Happy Days with the Naked Chef	T16.0 Food & Drink: General	Monday, September 3, 2001	Oliver, Jamie	Penguin Grp
+98	Hunger Games,The:Hunger Games Trilogy	Y2.2 Young Adult Fiction	Thursday, December 1, 2011	Collins, Suzanne	Scholastic Ltd. Grp
+99	Lost Boy,The:A Foster Child's Search for the Love of a Family	T4.0 Biography: General	Saturday, April 7, 2001	Pelzer, Dave	Orion Grp
+100	Jamie's Ministry of Food:Anyone Can Learn to Cook in 24 Hours	T16.0 Food & Drink: General	Friday, October 3, 2008	Oliver, Jamie	Penguin Grp
+<NEW DATASET>					
+<ARTICLES>					
+100	Adult ADHD: A new disease?	Psychology	2016	Zalsman G, Shilton T.	Int J Psychiatry Clin Pract
+101	Neurobiology of ADHD	Psychology	2009	Tripp G, Wickens JR.	Neuropharmacology
+102	Complementary and alternative medical therapies for children with attention-deficit/hyperactivity disorder (ADHD)	Psychology	2011	Pellow J, Solomon EM, Barnard CN.	Altern Med Rev
+103	The neurobiological link between OCD and ADHD	Psychology	2014	Brem S, Grünblatt E, Drechsler R, Riederer P, Walitza S.	Atten Defic Hyperact Disord
+104	Autism Spectrum Disorders and ADHD: Overlapping Phenomenology, Diagnostic Issues, and Treatment Considerations	Psychology	2019	Antshel KM, Russo N.	Curr Psychiatry Rep
+105	Twenty years of research on attention-deficit/hyperactivity disorder (ADHD): looking back, looking forward	Psychology	2018	Cortese S, Coghill D.	Evid Based Ment Health
+106	A review of the pathophysiology, etiology, and treatment of attention-deficit hyperactivity disorder (ADHD)	Psychology	2014	Sharma A, Couture J.	Ann Pharmacother
+107	Attention Deficit Hyperactivity Disorder (ADHD): Controversy, Developmental Mechanisms, and Multiple Levels of Analysis	Psychology	2018	Hinshaw SP.	Annu Rev Clin Psychol
+108	ADHD and behavioral disorders: Assessment, management, and an update from DSM-5	Psychology	2015	Austerman J.	Cleve Clin J Med
+109	[ADHD in Adults and Comorbid Substance Use Disorder: Prevalence, Clinical Diagnostics and Integrated Therapy]	Psychology	2017	Dirks H, Scherbaum N, Kis B, Mette C.	Fortschr Neurol Psychiatr
+110	History of Diabetes Insipidus	Diabetes	2016	Valenti G, Tamma G.	G Ital Nefrol
+111	The spectrum of clinical presentation, diagnosis, and management of mitochondrial forms of diabetes	Diabetes	2015	Karaa A, Goldstein A.	Pediatr Diabetes
+112	Diabetes insipidus	Diabetes	1948	TIZARD JP.	Proc R Soc Med
+113	[Association between central diabetes insipidus and type 2 diabetes mellitus]	Diabetes	2018	Palumbo C, Nicolaci N, La Manna AA, Branek N, Pissano MN.	Medicina (B Aires)
+114	Gestational diabetes insipidus: a review of an underdiagnosed condition	Diabetes	2010	Aleksandrov N, Audibert F, Bedard MJ, Mahone M, Goffinet F, Kadoch IJ.	J Obstet Gynaecol Can
+115	Diabetes insipidus and pregnancy	Diabetes	2016	Chanson P, Salenave S.	Ann Endocrinol (Paris)
+116	Adipsic diabetes insipidus	Diabetes	2021	Kothari V, Cardona Z, Eisenberg Y.	Handb Clin Neurol
+117	Autoimmune diabetes insipidus	Diabetes	2021	Scherbaum WA.	Handb Clin Neurol
+118	New test for diabetes insipidus	Diabetes	2019	Morris A.	Nat Rev Endocrinol
+119	Genetics and diagnosis of central diabetes insipidus	Diabetes	2012	Bichet DG.	Ann Endocrinol (Paris)
+120	Characteristics of SARS-CoV-2 and COVID-19	Covid19	2021	Hu B, Guo H, Zhou P, Shi ZL.	Nat Rev Microbiol
+121	The emergence of COVID-19 as a global pandemic: Understanding the epidemiology, immune response and potential therapeutic targets of SARS-CoV-2	Covid19	2020	Muralidar S, Ambi SV, Sekaran S, Krishnan UM.	Biochimie
+122	Genotype and phenotype of COVID-19: Their roles in pathogenesis	Covid19	2021	Mousavizadeh L, Ghasemi S.	J Microbiol Immunol Infect
+123	An Update on Molecular Diagnostics for COVID-19	Covid19	2020	Islam KU, Iqbal J.	Front Cell Infect Microbiol
+124	COVID-19: A Review on the Novel Coronavirus Disease Evolution, Transmission, Detection, Control and Prevention	Covid19	2021	Sharma A, Ahmad Farouk I, Lal SK.	Viruses
+125	The novel coronavirus Disease-2019 (COVID-19): Mechanism of action, detection and recent therapeutic strategies	Covid19	2020	Seyed Hosseini E, Riahi Kashani N, Nikzad H, Azadbakht J, Hassani Bafrani H, Haddad Kashani H.	Virology
+126	COVID-19 and cardiac injury: clinical manifestations, biomarkers, mechanisms, diagnosis, treatment, and follow up	Covid19	2021	Tajbakhsh A, Gheibi Hayat SM, Taghizadeh H, Akbari A, Inabadi M, Savardashtaki A, Johnston TP, Sahebkar A.	Expert Rev Anti Infect Ther
+127	How to interpret and use COVID-19 serology and immunology tests	Covid19	2021	Ong DSY, Fragkou PC, Schweitzer VA, Chemaly RF, Moschopoulos CD, Skevaki C; European Society of Clinical Microbiology and Infectious Diseases (ESCMID) Study Group for Respiratory Viruses (ESGREV).	Clin Microbiol Infect
+128	Treatment for COVID-19: An overview	Covid19	2020	Stasi C, Fallani S, Voller F, Silvestri C.	Eur J Pharmacol
+129	COVID-19 and cancer: From basic mechanisms to vaccine development using nanotechnology	Covid19	2021	Han HJ, Nwagwu C, Anyim O, Ekweremadu C, Kim S.	Int Immunopharmacol
+130	Breast Cancer: Current Perspectives on the Disease Status	Cancer	2019	Fahad Ullah M.	Adv Exp Med Biol
+131	Treatment of breast cancer	Cancer	2010	Maughan KL, Lutterbie MA, Ham PS.	Am Fam Physician
+132	Screening for breast cancer	Cancer	2017	Peairs KS, Choi Y, Stewart RW, Sateia HF.	Semin Oncol
+133	Breast cancer	Cancer	2005	Veronesi U, Boyle P, Goldhirsch A, Orecchia R, Viale G.	Lancet
+134	Breast cancer biomarkers: risk assessment, diagnosis, prognosis, prediction of treatment efficacy and toxicity, and recurrence	Cancer	2014	M Braden A, V Stankowski R, M Engel J, A Onitilo A.	Curr Pharm Des
+135	Precision Medicine in Breast Cancer	Cancer	2017	Odle TG.	Radiol Technol
+136	Primary and secondary prevention of breast cancer	Cancer	2017	Kolak A, Kamińska M, Sygit K, Budny A, Surdyka D, Kukiełka-Budny B, Burdan F.	Ann Agric Environ Med
+137	Breast cancer in young women: an overview	Cancer	2017	Anastasiadi Z, Lianos GD, Ignatiadou E, Harissis HV, Mitsis M.	Updates Surg
+138	Inflammatory Breast Cancer: What to Know About This Unique, Aggressive Breast Cancer	Cancer	2018	Menta A, Fouad TM, Lucci A, Le-Petross H, Stauder MC, Woodward WA, Ueno NT, Lim B.	Surg Clin North Am
+139	Breast cancer	Cancer	2015	Woolston C.	Nature
+140	Introducing the 60th Anniversary of Biochemistry Special Issue	Biochemistry	2021	Schepartz A.	
+141	Welcome to Biochemistry Volume 1: No Hyphen Required	Biochemistry	2021	Kozarich JW.	
+142	Commentary: Innovation in the Biochemistry/Molecular Biology Laboratory	Biochemistry	2019	Wolfson AJ, Boyer R.	
+143	Introducing "Future of Biochemistry: The International Issue"	Biochemistry	2019	Schepartz A.	
+144	Introducing the "Future of Biochemistry" Special Issue	Biochemistry	2018	Schepartz A.	
+145	How to arouse students' desire to learn biochemistry	Biochemistry	2020	Yang R.	
+146	Ion-exchange chromatography	Biochemistry	2009	Jungbauer A, Hahn R.	
+147	Harnessing interdisciplinary education in biochemistry and molecular biology	Biochemistry	2019	Macaulay JO.	
+148	Creating custom Foldit puzzles for teaching biochemistry	Biochemistry	2019	Dsilva L, Mittal S, Koepnick B, Flatten J, Cooper S, Horowitz S.	
+149	Using e-notebooks to explore biochemistry with an agricultural lens	Biochemistry	2020	Gomez NA.	
+<NEW DATASET>					
+<MOVIES>					
+150	Youth in Revolt	Comedy	2010	The Weinstein Company	68
+151	You Will Meet a Tall Dark Stranger	Comedy	2010	Independent	43
+152	When in Rome	Comedy	2010	Disney	15
+153	What Happens in Vegas	Comedy	2008	Fox	28
+154	Water For Elephants	Drama	2011	20th Century Fox	60
+155	WALL-E	Animation	2008	Disney	96
+156	Waitress	Romance	2007	Independent	89
+157	Waiting For Forever	Romance	2011	Independent	6
+158	Valentine's Day	Comedy	2010	Warner Bros.	17
+159	Tyler Perry's Why Did I get Married	Romance	2007	Independent	46
+160	Twilight: Breaking Dawn	Romance	2011	Independent	26
+161	Twilight	Romance	2008	Summit	49
+162	The Ugly Truth	Comedy	2009	Independent	14
+163	The Twilight Saga: New Moon	Drama	2009	Summit	27
+164	The Time Traveler's Wife	Drama	2009	Paramount	38
+165	The Proposal	Comedy	2009	Disney	43
+166	The Invention of Lying	Comedy	2009	Warner Bros.	56
+167	The Heartbreak Kid	Comedy	2007	Paramount	30
+168	The Duchess	Drama	2008	Paramount	60
+169	The Curious Case of Benjamin Button	Fantasy	2008	Warner Bros.	73
+170	The Back-up Plan	Comedy	2010	CBS	20
+171	Tangled	Animation	2010	Disney	89
+172	Something Borrowed	Romance	2011	Independent	15
+173	She's Out of My League	Comedy	2010	Paramount	57
+174	Sex and the City Two	Comedy	2010	Warner Bros.	15
+175	Sex and the City 2	Comedy	2010	Warner Bros.	15
+176	Sex and the City	Comedy	2008	Warner Bros.	49
+177	Remember Me	Drama	2010	Summit	28
+178	Rachel Getting Married	Drama	2008	Independent	85
+179	Penelope	Comedy	2008	Summit	52
+180	P.S. I Love You	Romance	2007	Independent	21
+181	Over Her Dead Body	Comedy	2008	New Line	15
+182	Our Family Wedding	Comedy	2010	Independent	14
+183	One Day	Romance	2011	Independent	37
+184	Not Easily Broken	Drama	2009	Independent	34
+185	No Reservations	Comedy	2007	Warner Bros.	39
+186	Nick and Norah's Infinite Playlist	Comedy	2008	Sony	73
+187	New Year's Eve	Romance	2011	Warner Bros.	8
+188	My Week with Marilyn	Drama	2011	The Weinstein Company	83
+189	Music and Lyrics	Romance	2007	Warner Bros.	63
+190	Monte Carlo	Romance	2011	20th Century Fox	38
+191	Miss Pettigrew Lives for a Day	Comedy	2008	Independent	78
+192	Midnight in Paris	Romence	2011	Sony	93
+193	Marley and Me	Comedy	2008	Fox	63
+194	Mamma Mia!	Comedy	2008	Universal	53
+195	Mamma Mia!	Comedy	2008	Universal	53
+196	Made of Honor	Comdy	2008	Sony	13
+197	Love Happens	Drama	2009	Universal	18
+198	Love & Other Drugs	Comedy	2010	Fox	48
+199	Life as We Know It	Comedy	2010	Independent	28
+200	License to Wed	Comedy	2007	Warner Bros.	8
+201	Letters to Juliet	Comedy	2010	Summit	40
+202	Leap Year	Comedy	2010	Universal	21
+203	Knocked Up	Comedy	2007	Universal	91
+204	Killers	Action	2010	Lionsgate	11
+205	Just Wright	Comedy	2010	Fox	45
+206	Jane Eyre	Romance	2011	Universal	85
+207	It's Complicated	Comedy	2009	Universal	56
+208	I Love You Phillip Morris	Comedy	2010	Independent	71
+209	High School Musical 3: Senior Year	Comedy	2008	Disney	65
+210	He's Just Not That Into You	Comedy	2009	Warner Bros.	42
+211	Good Luck Chuck	Comedy	2007	Lionsgate	3
+212	Going the Distance	Comedy	2010	Warner Bros.	53
+213	Gnomeo and Juliet	Animation	2011	Disney	56
+214	Gnomeo and Juliet	Animation	2011	Disney	56
+215	Ghosts of Girlfriends Past	Comedy	2009	Warner Bros.	27
+216	Four Christmases	Comedy	2008	Warner Bros.	26
+217	Fireproof	Drama	2008	Independent	40
+218	Enchanted	Comedy	2007	Disney	93
+219	Dear John	Drama	2010	Sony	29
+220	Beginners	Comedy	2011	Independent	84
+221	Across the Universe	romance	2007	Independent	54
+222	A Serious Man	Drama	2009	Universal	89
+223	A Dangerous Method	Drama	2011	Independent	79
+224	27 Dresses	Comedy	2008	Fox	40
+225	(500) Days of Summer	comedy	2009	Fox	87
