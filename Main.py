@@ -1,3 +1,4 @@
+import os
 
 def StaffMenu():
     """Menu for staff users"""
@@ -48,6 +49,7 @@ def MemberMenu():
 # Main Scope
 
 def Main():
+    # Opening the data files and converting into class instances
 
     # Prompting user to choose an option
      while True:
