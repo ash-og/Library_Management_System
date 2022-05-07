@@ -37,14 +37,10 @@ class Member(object):
 class Item(object):
     """Items class to hold items available to borrow from Libraries"""
 
-    def __init__(self, title="", description="", genre="", date="", language="", awards="", notes=""):
+    def __init__(self, title="", genre="", date=""):
         self.title = title
-        self.description = description
         self.genre = genre
         self.release_date = date
-        self.language = language
-        self.awards = awards
-        self.notes = notes
 
     def __str__(self):
         return "{} is from the {} genre. It was released {}.".format(self.title, self.genre, self.release_date)
@@ -52,44 +48,43 @@ class Item(object):
 class Book(Item):
     """Book is a subclass of Item"""
 
-    def __init__(self, title="", description="", genre="", date="", language="", awards="", notes="", isbn="", author="", publisher=""):
+    def __init__(self, title="", genre="", date="", author="", publisher=""):
 
-        Item.__init__(self, title, description, genre, date, language, awards, notes)
-        self.ISBN = isbn
+        Item.__init__(self, title, genre, date) #Check this - should it be release_date?
         self.author = author
         self.publisher = publisher
 
     def __str__(self):
         result = "{} is a {} book by {}\n".format(self.title, self.genre, self.author)
-        result += "It is " + self.description + "\n"
         result += "It was released " + self.release_date
         return result
 
 class Article(Item):
     """Journal articles as a subclass of Item"""
 
-    def __init__(self, title="", description="", genre="", date="", language="", awards="", notes="", author="", abstract="", issn=""):
-        Item.__init__(self, title, description, genre, date, language, awards, notes)
+    def __init__(self, title="", genre="", date="", author="", journal=""):
+        Item.__init__(self, title, genre, date)
         self.author = author
-        self.abstract = abstract
-        self.ISSN = issn
+        self.journal = journal
 
     def __str__(self):
         result = "\""+ self.title + "\"" + " is an article by " + self.author + ".\n"
         return result
 
 
-class Digital(Item):
+class Movie(Item):
     """Digital Media as a subclass of item"""
-    def __init__(self, title="", description="", genre="", date="", language="", awards="", notes="", media_type="", performers=""):
-        Item.__init__(self, title, description, genre, date, language, awards, notes)
-        self.media_type = media_type
-        self.performers = performers
+    def __init__(self, title="", genre="", date="", studio="", rt_score=""):
+        Item.__init__(self, title, genre, date)
+        self.studio = studio
+        self.rt_score = rt_score
 
     def __str__(self):
-        result = self.title + " is a " + self.media_type + "\n"
-        result += "It is " + self.description
+        result = self.title + " is a " + self.genre + " movie \n"
+        result += "It has a Rotten Tomatoes score of " + self.rt_score
         return result
 
 
 # Main Scope
+
+
