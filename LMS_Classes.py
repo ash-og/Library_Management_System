@@ -2,30 +2,31 @@
 
 class Library(object):
     """Library class"""
-    def __init__(self, lid: int, name="", location="", phone="", email="", website=""):
+    def __init__(self, lid: int, name="", address="", location="", phone="", email="", website=""):
         self.ID = lid
         self.name = name
         self.location = location
+        self.address = address
         self.phone = phone
         self.email = email
         self.website = website
 
 
     def __str__(self):
-        return "{} is located at {}.\nYou can contact them via {} or {}"\
+        return "{} is located in {}.\nYou can contact them via {} or {}"\
             .format(self.name, self.location, self.phone, self.email)
 
 
 class Member(object):
     """Library Members class"""
 
-    def __init__(self, mid: int, name="", m_type="", dob="", address="", phone="", email="", branch="",
-                 history=None):
+    def __init__(self, mid: int, name="", m_type="", dob="", address="", location="", phone="", email="", branch="", history=None):
         self.ID = mid
         self.name = name
         self.type = m_type
         self.DOB = dob
         self.address = address
+        self.location = location
         self.phone = phone
         self.email = email
         self.closest_branch = branch

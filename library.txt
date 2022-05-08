@@ -1,0 +1,6 @@
+1	Carlow County Library Headquarters	Tullow Street, Carlow	Carlow	+353 59 9129705/+353 59 9129701	library@carlowcoco.ie	http://www.carlowlibraries.ie/
+2	Laois County Library HQ	The Old Mill, Church Street, Portlaoise, Co. Laois	Laois	+353 57 8674315 | +353 57 8674381	library@laoiscoco.ie	http://www.laois.ie/LeisureandCulture/Libraries/
+3	Tipperary Library Service	Castle Avenue, Thurles, Co. Tipperary, E41 KA44.	Tipperary	+353 (0)761 06 6100	libraries@tipperarycoco.ie	http://www.tipperarylibraries.ie/
+4	Wexford Library Management Services	Wexford County Council Headquarters, Carricklawn, Wexford	Wexford	+353 53 9196560	libraryhq@wexfordcoco.ie	https://www.wexfordcoco.ie/libraries
+5	Kildare Library	Riverbank Arts Centre, Main Street, Newbridge, County Kildare.	Kildare	+353 45 431109/486 | +353 45 432490	colibrary@kildarecoco.ie	http://kildare.ie/library/index.html
+6	Waterford Central Library 	Lady Lane, Waterford	Waterford	0761 102975	library@waterfordcouncil.ie	http://www.waterfordlibraries.ie
