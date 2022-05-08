@@ -2,7 +2,7 @@
 
 class Library(object):
     """Library class"""
-    def __init__(self, lid: int, name="", address="", location="", phone="", email="", website=""):
+    def __init__(self, lid, name="", address="", location="", phone="", email="", website=""):
         self.ID = lid
         self.name = name
         self.location = location
@@ -13,7 +13,7 @@ class Library(object):
 
 
     def __str__(self):
-        return "{} is located at {}.\nYou can contact them via {} or {}"\
+        return "{} is located in {}.\nYou can contact them via {} or {}"\
             .format(self.name, self.location, self.phone, self.email)
 
 

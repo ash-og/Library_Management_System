@@ -2,7 +2,7 @@ import LMS_Classes
 
 # For Item Class Object Creation -----------------------------------------------------------------------
 
-def itemCreation(file):
+def itemListCreation(file):
     """Creating a list of items from our items from a file"""
     input_file = open(file, "r")
     #splitting the file at <NEW DATASET>. This should give my a list with the three data sets as items.
@@ -27,7 +27,7 @@ def itemTypeSeperation(i, items_list):
     item_type_list.pop(-1)
     return item_type_list
 
-def objectDict(list, objectClass):
+def itemObjectDict(list, objectClass):
     """Creating a dictionary of class objects from a list"""
     obj_dict = {}
     for item in list:
@@ -36,42 +36,65 @@ def objectDict(list, objectClass):
 
 # For Library and Member Class Object Creation -----------------------------------------------------------------------
 
-def objectCreation(file):
+def listCreation(file):
     """Creating a list of from our file"""
     input_file = open(file, "r")
-    temp_list = input_file.readlines()
+    temp_list = input_file.read().split("\n")
     input_file.close()
-    object_list = []
-    for item in temp_list:
-        object_list.append(item.split("\t"))
+    object_list = dataSeperation(temp_list)
     return object_list
 
+def libObjectDict(list, objectClass):
+    """Creating a dictionary of class objects from a list"""
+    obj_dict = {}
+    for item in list:
+        obj_dict[int(item[0])] = objectClass(int(item[0]), item[1], item[2], item[3], item[4], item[5])
+    return obj_dict
+
+def memObjectDict(list, objectClass):
+    """Creating a dictionary of class objects from a list"""
+    obj_dict = {}
+    for item in list:
+        obj_dict[int(item[0])] = objectClass(int(item[0]), item[1], item[2], item[3], item[4], item[5], item[6], item[7], item[8])
+    return obj_dict
 
 # Main Scope
 
 def main():
     # Library Catalogue:
 
-    #Creating a list of each item
-    item_list = itemCreation("items_test.txt")
+    # Creating a list of each item
+    item_list = itemListCreation("items_test.txt")
     book_list = itemTypeSeperation(1, item_list)
     article_list = itemTypeSeperation(2, item_list)
     film_list = itemTypeSeperation(3, item_list)
 
-    #Instantiating class objects based on those lists
-
-    book_obj_dict = objectDict(book_list, LMS_Classes.Book)
+    # Instantiating class objects based on those lists
+    book_obj_dict = itemObjectDict(book_list, LMS_Classes.Book)
     print(book_obj_dict)
-    article_obj_dict = objectDict(article_list, LMS_Classes.Article)
+    article_obj_dict = itemObjectDict(article_list, LMS_Classes.Article)
     print(article_obj_dict)
-    film_obj_dict = objectDict(film_list, LMS_Classes.Film)
+    film_obj_dict = itemObjectDict(film_list, LMS_Classes.Film)
     print(film_obj_dict)
 
-    # Libraries:
-    #Create a list of libraries:
+    # Library and Members
 
-    library_list = objectCreation("library.txt")
-    print(library_list)
+    # Create a list of libraries and members:
+    library_list = listCreation("library.txt")
+    member_list = listCreation("members.txt")
+
+    # Creating a dictionary of libraries and members:
+    library_dict = libObjectDict(library_list, LMS_Classes.Library)
+    print(library_dict)
+    member_dict = memObjectDict(member_list, LMS_Classes.Member)
+    print(member_dict)
+
+
+
+
+
+
+
 
 
 
