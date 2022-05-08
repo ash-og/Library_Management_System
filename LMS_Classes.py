@@ -2,7 +2,7 @@
 
 class Library(object):
     """Library class"""
-    def __init__(self, lid, name="", address="", location="", phone="", email="", website=""):
+    def __init__(self, lid: int, name="", address="", location="", phone="", email="", website=""):
         self.ID = lid
         self.name = name
         self.location = location
