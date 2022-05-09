@@ -1,31 +1,34 @@
 import LMS_Classes
 import objectCreation
+import menuFunctions
 import os
-
-
-def browseCatalogue():
-    print("ID \t-\t Title \t\t-\t\t Author")
-    for value in book_obj_dict.values():
-        print(value)
 
 
 def staff_menu():
     """Menu for staff users"""
     while True:
         user_input = input("What would you like to do?\n"
-                           "1. Modify Member\n"
-                           "2. Modify Library\n"
-                           "3. Modify Catalogue Item\n"
-                           "4. Change Item State\n"
+                           "1. Add or Remove Member\n"
+                           "2. Modify Member\n"
+                           "3. Add or Remove Item\n"
+                           "4. Add or Remove Library\n"
                            "5. Return to Main Menu\n"
                            "6. Quit Program \n")
         if user_input == "1":
-            pass
-            input("Press any key to continue..\n")
+            add_or_remove = input("Would you like to add or remove?")
+            try:
+                if add_or_remove.lower() == "add":
+                    menuFunctions.add_member()
+            except:
+                print("That didn't work :(")
+            #if add_or_remove.lower() == "remove":
+
+            #input("Press any key to continue..\n")
+
         elif user_input == "2":
             pass
             input("Press any key to continue..\n")
-        elif user_input == "3":
+        elif user_input == "6":
             print("Quitting program...")
             break
         else:
@@ -48,7 +51,7 @@ def member_menu():
         elif user_input == "2":
             pass
             input("Press any key to continue..\n")
-        elif user_input == "3":
+        elif user_input == "6":
             print("Quitting program...")
             break
         else:
@@ -72,3 +75,7 @@ def mainMenu():
             break
         else:
             print("Not a valid option. Try again.\n")
+
+# Main
+
+mainMenu()

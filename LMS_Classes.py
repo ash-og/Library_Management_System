@@ -3,7 +3,7 @@
 class Library(object):
     """Library class"""
     def __init__(self, lid: int, name="", address="", location="", phone="", email="", website=""):
-        self.ID = lid
+        self.id = lid
         self.name = name
         self.location = location
         self.address = address
@@ -33,7 +33,7 @@ class Member(object):
         self.__borrow_history = history
 
     def __str__(self):
-        return "{} is a {} member. Their closest branch is {}.".format(self.name, self.type, self.closest_branch)
+        return "Member ID #{} is called {}, and is an {} member.".format(self.ID, self.__name, self.type, self.__closest_branch)
 
     def get_name(self):
         return self.__name
@@ -144,7 +144,7 @@ class BorrowTransaction(object):
             self.return_date = return_date
 
     def __str__(self):
-        result = self.member + "borrowed " + self.item.title
+        result = self.member.get_name() + "borrowed " + self.item.title
         return result
 
 # class Location(object):
