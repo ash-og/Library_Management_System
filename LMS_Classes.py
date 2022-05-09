@@ -20,20 +20,68 @@ class Library(object):
 class Member(object):
     """Library Members class"""
 
-    def __init__(self, mid: int, name="", m_type="", dob="", address="", location="", phone="", email="", branch="", history=None):
+    def __init__(self, mid: int, name="", m_type="", dob="", address="", location="", phone="", email="", branch="", history=""):
         self.ID = mid
-        self.name = name
+        self.__name = name
         self.type = m_type
-        self.DOB = dob
-        self.address = address
-        self.location = location
-        self.phone = phone
-        self.email = email
-        self.closest_branch = branch
-        self.borrow_history = history
+        self.__DOB = dob
+        self.__address = address
+        self.__location = location
+        self.__phone = phone
+        self.__email = email
+        self.__closest_branch = branch
+        self.__borrow_history = history
 
     def __str__(self):
         return "{} is a {} member. Their closest branch is {}.".format(self.name, self.type, self.closest_branch)
+
+    def get_name(self):
+        return self.__name
+
+    def set_name(self, name):
+        self.__name = name
+
+    def get_dob(self):
+        return self.__DOB
+
+    def set_dob(self, dob):
+        self.__DOB = dob
+
+    def get_address(self):
+        return self.__address
+
+    def set_address(self, address):
+        self.__address = address
+
+    def get_location(self):
+        return self.__location
+
+    def set_location(self, location):
+        self.__location = location
+
+    def get_phone(self):
+        return self.__phone
+
+    def set_phone(self, phone):
+        self.__phone = phone
+
+    def get_email(self):
+        return self.__email
+
+    def set_email(self, email):
+        self.__email = email
+
+    def get_branch(self):
+        return self.__closest_branch
+
+    def set_branch(self, branch):
+        self.__closest_branch = branch
+
+    def get_history(self):
+        return self.__borrow_history
+
+    def set_history(self, history):
+        self.__borrow_history = history
 
 
 class Item(object):
@@ -58,8 +106,7 @@ class Book(Item):
         self.publisher = publisher
 
     def __str__(self):
-        result = "{} is a {} book by {}\n".format(self.title, self.genre, self.author)
-        result += "It was released " + self.release_date
+        result = "{} \t-\t {} \t-\t {}\n".format(self.id, self.title, self.author)
         return result
 
 class Article(Item):
@@ -71,7 +118,7 @@ class Article(Item):
         self.journal = journal
 
     def __str__(self):
-        result = "\""+ self.title + "\"" + " is an article by " + self.author + ".\n"
+        result = "{} \t-\t {} \t-\t {}\n".format(self.id, self.title, self.author)
         return result
 
 
@@ -86,6 +133,31 @@ class Film(Item):
         result = self.title + " is a " + self.genre + " movie \n"
         result += "It has a Rotten Tomatoes score of " + self.rt_score
         return result
+
+class BorrowTransaction(object):
+    """Borrowed lists the borrowing transactions, storing the member, book and time associated with each transaction"""
+    def __init__(self, id: int, member: Member, item, start_date, return_date):
+            self.id = id
+            self.member = member
+            self.item = item
+            self.start_date = start_date
+            self.return_date = return_date
+
+    def __str__(self):
+        result = self.member + "borrowed " + self.item.title
+        return result
+
+# class Location(object):
+#     """Locations for members or libraries"""
+#     def __init__(self, street, town, city, county, eircode):
+#         self.street = street
+#         self.town = town
+#         self.city = city
+#         self.county = county
+#         self.eircode = eircode
+
+
+
 
 
 # Main Scope

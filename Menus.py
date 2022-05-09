@@ -1,5 +1,15 @@
+import LMS_Classes
+import objectCreation
+import os
 
-def StaffMenu():
+
+def browseCatalogue():
+    print("ID \t-\t Title \t\t-\t\t Author")
+    for value in book_obj_dict.values():
+        print(value)
+
+
+def staff_menu():
     """Menu for staff users"""
     while True:
         user_input = input("What would you like to do?\n"
@@ -21,7 +31,7 @@ def StaffMenu():
         else:
             print("Not a valid option. Try again.\n")
 
-def MemberMenu():
+def member_menu():
     """Menu for Member users"""
     while True:
         user_input = input("What would you like to do?\n"
@@ -52,10 +62,10 @@ def mainMenu():
                            "2. Member\n"
                            "3. Quit Program\n")
         if user_input == "1":
-            StaffMenu()
+            staff_menu()
             input("Press any key to continue..\n")
         elif user_input == "2":
-            MemberMenu()
+            member_menu()
             input("Press any key to continue..\n")
         elif user_input == "3":
             print("Quitting program...")

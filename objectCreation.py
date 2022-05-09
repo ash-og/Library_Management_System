@@ -31,7 +31,7 @@ def itemObjectDict(list, objectClass):
     """Creating a dictionary of class objects from a list"""
     obj_dict = {}
     for item in list:
-        obj_dict[item[1]] = objectClass(int(item[0]), item[1], item[2], item[3], item[4], item[5])
+        obj_dict[item[0]] = objectClass(int(item[0]), item[1], item[2], item[3], item[4], item[5])
     return obj_dict
 
 # For Library and Member Class Object Creation -----------------------------------------------------------------------
@@ -65,8 +65,11 @@ def main():
 
     # Creating a list of each item
     item_list = itemListCreation("items_test.txt")
+    # print(item_list)
     book_list = itemTypeSeperation(1, item_list)
+    # print(book_list)
     article_list = itemTypeSeperation(2, item_list)
+    # print(article_list)
     film_list = itemTypeSeperation(3, item_list)
 
     # Instantiating class objects based on those lists
@@ -81,7 +84,9 @@ def main():
 
     # Create a list of libraries and members:
     library_list = listCreation("library.txt")
+    # print(library_list)
     member_list = listCreation("members.txt")
+    # print(member_list)
 
     # Creating a dictionary of libraries and members:
     library_dict = libObjectDict(library_list, LMS_Classes.Library)
