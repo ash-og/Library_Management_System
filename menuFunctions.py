@@ -104,12 +104,37 @@ def add_member():
 
 def remove_member():
     """Removing an instance of the Member class"""
-    print("Please enter the details of the member you would like to remove:")
-    mid = input("Member ID: ")
-    m_name = input("Member Name: ")
-    print("The Member you have selected is: ")
-    print(objectCreation.member_dict[mid].name)
+    while True:
+        try:
+            # Requesting ID and Name of member to be removed
+            print("Please enter the details of the member you would like to remove:")
+            while True:
+                try:
+                    mid = int(input("Member ID: ")) # input loops until an int is entered. Int must be a key in member_dict
+                    break
+                except ValueError:
+                    print("Invalid input. Please enter a number for Member ID.")
+            m_name = input("Member Full Name: ")
+            if objectCreation.member_dict[mid].get_name().lower().strip() == m_name.lower(): # if the name and id entered, match a name and id in the dict, the program continues
+                # Requesting confirmation before removal
+                print("The Member you have selected is: ")
+                print("#", objectCreation.member_dict[mid].ID, objectCreation.member_dict[mid].get_name())
+                confirmation = input("Press y to confirm")
+                if confirmation == "y":
+                    pass
+                    break
+                else:
+                    break
+            else:
+                raise ValueError
+        except ValueError:
+            print("We have no record of that member. Please check details and try again.\n")
+        except KeyError:
+            print("Invalid Member ID. Please try again.\n")
 
+remove_member()
+
+# print(objectCreation.member_dict[1].get_name().lower().strip())
 
 # For browsing the catalogue
 def browse_catalogue():
