@@ -13,7 +13,7 @@ def rewrite_members():
         pass
     new_file = open("members.txt", "w+")
     for value in objectCreation.member_dict.values():
-        entry = "{}\t{}\t{}\t{}\t{}\t{}\t{}\t{}\t{}".format(value.ID, value.get_name(), value.type, value.get_dob(), value.get_address(), value.get_location(), value.get_phone(), value.get_email(), value.get_branch())
+        entry = "{}\t{}\t{}\t{}\t{}\t{}\t{}\t{}\t{}".format(value.id, value.get_name(), value.type, value.get_dob(), value.get_address(), value.get_location(), value.get_phone(), value.get_email(), value.get_branch())
         print(entry, file=new_file)
     new_file.close()
     with open("members.txt", "r") as temp_file:
@@ -92,7 +92,7 @@ def add_member():
     print("New Member is: ")
     print(new_member)
     # Adding new member to member_dict
-    objectCreation.member_dict[new_member.ID] = new_member
+    objectCreation.member_dict[new_member.id] = new_member
     # Rewriting members text file based on dictionary update
     rewrite_members()
 
@@ -118,11 +118,12 @@ def remove_member():
             if objectCreation.member_dict[mid].get_name().lower().strip() == m_name.lower(): # if the name and id entered, match a name and id in the dict, the program continues
                 # Requesting confirmation before removal
                 print("The Member you have selected is: ")
-                print("#", objectCreation.member_dict[mid].ID, objectCreation.member_dict[mid].get_name())
+                print("#", objectCreation.member_dict[mid].id, objectCreation.member_dict[mid].get_name())
                 confirmation = input("Press y to confirm. Press n to return to previous menu.\n")
                 if confirmation == "y":
                     objectCreation.member_dict.pop(mid)
-                    print(objectCreation.member_dict[mid].get_name(), "has been removed.")
+                    print(m_name, "has been removed.")
+                    print("The remaining memebers are: ")
                     rewrite_members()
                     break
                 else:
@@ -134,11 +135,10 @@ def remove_member():
         except KeyError:
             print("Invalid Member ID. Please try again.\n")
 
-remove_member()
-
-# print(objectCreation.member_dict[1].get_name().lower().strip())
 
 # For browsing the catalogue
+
+
 def browse_catalogue():
     print("ID \t-\t Title \t\t-\t\t Author")
     for value in objectCreation.book_obj_dict.values():

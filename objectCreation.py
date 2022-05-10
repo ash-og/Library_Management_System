@@ -40,7 +40,7 @@ def objectDict(list, objectClass):
     # print(list)
     temp_list = [objectClass(*args) for args in list]
     for item in temp_list:
-        obj_dict[item.id] = item
+        obj_dict[int(item.id)] = item
     return obj_dict
 
 # For Library and Member Class Object Creation -----------------------------------------------------------------------

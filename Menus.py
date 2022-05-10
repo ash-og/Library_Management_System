@@ -12,24 +12,22 @@ def staff_menu():
                            "2. Modify Member\n"
                            "3. Add or Remove Item\n"
                            "4. Add or Remove Library\n"
-                           "5. Return to Main Menu\n"
-                           "6. Quit Program \n")
+                           "5. Return to Main Menu\n")
         if user_input == "1":
-            add_or_remove = input("Would you like to add or remove?")
-            try:
-                if add_or_remove.lower() == "add":
-                    menuFunctions.add_member()
-            except:
-                print("That didn't work :(")
-            #if add_or_remove.lower() == "remove":
-
-            #input("Press any key to continue..\n")
+            add_or_remove = input("Would you like to add or remove?\n")
+            if add_or_remove.lower() == "add":
+                menuFunctions.add_member()
+            elif add_or_remove.lower() == "remove":
+                menuFunctions.remove_member()
+            else:
+                print("Invalid input. Please try again.")
+            input("Press any key to continue..\n")
 
         elif user_input == "2":
             pass
             input("Press any key to continue..\n")
-        elif user_input == "6":
-            print("Quitting program...")
+        elif user_input == "5":
+            print("Returning to main menu...")
             break
         else:
             print("Not a valid option. Try again.\n")
