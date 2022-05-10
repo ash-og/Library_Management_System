@@ -119,9 +119,11 @@ def remove_member():
                 # Requesting confirmation before removal
                 print("The Member you have selected is: ")
                 print("#", objectCreation.member_dict[mid].ID, objectCreation.member_dict[mid].get_name())
-                confirmation = input("Press y to confirm")
+                confirmation = input("Press y to confirm. Press n to return to previous menu.\n")
                 if confirmation == "y":
-                    pass
+                    objectCreation.member_dict.pop(mid)
+                    print(objectCreation.member_dict[mid].get_name(), "has been removed.")
+                    rewrite_members()
                     break
                 else:
                     break

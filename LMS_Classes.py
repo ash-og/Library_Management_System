@@ -21,7 +21,7 @@ class Member(object):
     """Library Members class"""
 
     def __init__(self, mid: int, name="", m_type="", dob="", address="", location="", phone="", email="", branch="", history=""):
-        self.ID = mid
+        self.id = mid
         self.__name = name
         self.type = m_type
         self.__DOB = dob
@@ -33,7 +33,7 @@ class Member(object):
         self.__borrow_history = history
 
     def __str__(self):
-        return "Member ID #{} is called {}, and is an {} member.".format(self.ID, self.__name, self.type, self.__closest_branch)
+        return "Member ID #{} is called {}, and is an {} member.".format(self.id, self.__name, self.type, self.__closest_branch)
 
     def get_name(self):
         return self.__name
@@ -106,7 +106,9 @@ class Book(Item):
         self.publisher = publisher
 
     def __str__(self):
-        result = "{} \t-\t {} \t-\t {}\n".format(self.id, self.title, self.author)
+        result = "ID#: \t" + str(self.id) + "\n"
+        result += "Title:\t" + self.title + "\n"
+        result += "Author: \t" + self.author + "\n"
         return result
 
 class Article(Item):
@@ -118,7 +120,9 @@ class Article(Item):
         self.journal = journal
 
     def __str__(self):
-        result = "{} \t-\t {} \t-\t {}\n".format(self.id, self.title, self.author)
+        result = "ID#: \t" + str(self.id) + "\n"
+        result += "Title:\t" + self.title + "\n"
+        result += "Author: \t" + self.author + "\n"
         return result
 
 
