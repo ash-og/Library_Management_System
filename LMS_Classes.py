@@ -1,3 +1,6 @@
+import datetime
+
+
 # Defining Classes
 
 class Library(object):
@@ -87,8 +90,9 @@ class Member(object):
 class Item(object):
     """Items class to hold items available to borrow from Libraries"""
 
-    def __init__(self, id: int, title="", genre="", date=""):
+    def __init__(self, id: int, copies: int, title: str, genre="", date=""):
         self.id = id
+        self.copies = copies
         self.title = title
         self.genre = genre
         self.release_date = date
@@ -99,57 +103,66 @@ class Item(object):
 class Book(Item):
     """Book is a subclass of Item"""
 
-    def __init__(self, id: int, title="", genre="", date="", author="", publisher=""):
+    def __init__(self, id: int, copies: int, title: str, genre="", date="", author="", publisher=""):
 
-        Item.__init__(self, id, title, genre, date) #Check this - should it be release_date?
+        Item.__init__(self, id, copies, title, genre, date)
         self.author = author
         self.publisher = publisher
+        self.copies = copies
+
 
     def __str__(self):
         result = "ID#: \t" + str(self.id) + "\n"
         result += "Title:\t" + self.title + "\n"
         result += "Author: \t" + self.author + "\n"
+        result += "Available Copies: \t" + str(self.copies) + "\n"
         return result
 
 class Article(Item):
     """Journal articles as a subclass of Item"""
 
-    def __init__(self, id: int, title="", genre="", date="", author="", journal=""):
-        Item.__init__(self, id, title, genre, date)
+    def __init__(self, id: int, copies: int, title: str, genre="", date="", author="", journal=""):
+        Item.__init__(self, id, copies, title, genre, date)
         self.author = author
         self.journal = journal
+        self.copies = copies
 
     def __str__(self):
         result = "ID#: \t" + str(self.id) + "\n"
         result += "Title:\t" + self.title + "\n"
         result += "Author: \t" + self.author + "\n"
+        result += "Available Copies: \t" + str(self.copies)
         return result
 
 
 class Film(Item):
     """Digital Media as a subclass of item"""
-    def __init__(self, id: int, title="", genre="", date="", studio="", rt_score=""):
-        Item.__init__(self, id, title, genre, date)
+    def __init__(self, id: int, copies: int, title: str, genre="", date="", studio="", rt_score=""):
+        Item.__init__(self, id, copies, title, genre, date)
         self.studio = studio
         self.rt_score = rt_score
+        self.copies = copies
 
     def __str__(self):
         result = "ID#: \t" + str(self.id) + "\n"
         result += "Title:\t" + self.title + "\n"
         result += "Rotten Tomatoes Score: \t" + self.rt_score + "\n"
+        result += "Available Copies: \t" + str(self.copies)
         return result
 
 class BorrowTransaction(object):
     """Borrowed lists the borrowing transactions, storing the member, book and time associated with each transaction"""
-    def __init__(self, id: int, member: Member, item, start_date, return_date):
+    def __init__(self, id: int, member_id: int, m_name: str, item_id: int, i_name: str, start_date: datetime.date, return_date: datetime.date):
             self.id = id
-            self.member = member
-            self.item = item
+            self.member_id = member_id
+            self.m_name = m_name
+            self.item_id = item_id
+            self.i_name = i_name
             self.start_date = start_date
             self.return_date = return_date
 
     def __str__(self):
-        result = self.member.get_name() + "borrowed " + self.item.title
+        result = self.m_name + " borrowed " + self.i_name
         return result
 
 # class Location(object):

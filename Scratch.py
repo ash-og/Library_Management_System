@@ -1,3 +1,4 @@
+import datetime
 import os
 import LMS_Classes
 import menuFunctions
@@ -69,18 +70,38 @@ import objectCreation
 
 
 
-mid = 6
+# mid = 6
 # new_value = "Sarah Young"
 # objectCreation.member_dict[mid].set_name(new_value)
 # print(objectCreation.member_dict[mid].get_name())
 # menuFunctions.rewrite_members()
-new_value = "0982738482"
+# new_value = "0982738482"
 # print(objectCreation.member_dict[mid].type)
 # objectCreation.member_dict[mid].type = new_value
 # print(objectCreation.member_dict[mid].type)
 # print(objectCreation.member_dict[mid])
 # menuFunctions.rewrite_members()
-objectCreation.member_dict[mid].set_phone(new_value)
-menuFunctions.rewrite_members()
-print("This member's address is now: ")
-print(objectCreation.member_dict[mid].get_phone())
+# objectCreation.member_dict[mid].set_phone(new_value)
+# menuFunctions.rewrite_members()
+# print("This member's address is now: ")
+# print(objectCreation.member_dict[mid].get_phone())
+
+# def itemObjectDict(list, objectClass):
+#     """Creating a dictionary of class objects from a list"""
+#     obj_dict = {}
+#     for item in list:
+#         obj_dict[int(item[0])] = objectClass(int(item[0]), item[1], item[2], item[3], item[4], item[5])
+#     return obj_dict
+
+
+
+# def libObjectDict(list, objectClass):
+#     """Creating a dictionary of class objects from a list"""
+#     obj_dict = {}
+#     for item in list:
+#         obj_dict[int(item[0])] = objectClass(int(item[0]), item[1], item[2], item[3], item[4], item[5])
+#     return obj_dict
+
+
+
+print(datetime.date.today().strftime("%d-%m-%Y"))

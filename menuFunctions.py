@@ -45,22 +45,21 @@ def rewrite_items():
     print("<NEW DATASET>", file=new_file)
     # Adding each instance of Book
     for value in objectCreation.book_obj_dict.values():
-        entry = "{}\t{}\t{}\t{}\t{}\t{}".format(value.id, value.title, value.genre, value.release_date, value.author, value.publisher)
+        entry = "{}\t{}\t{}\t{}\t{}\t{}\t{}".format(value.id, value.copies, value.title, value.genre, value.release_date, value.author, value.publisher)
         print(entry, file=new_file)
     print("<NEW DATASET>", file=new_file)
     # Adding each instance of Article
     for value in objectCreation.article_obj_dict.values():
-        entry = "{}\t{}\t{}\t{}\t{}\t{}".format(value.id, value.title, value.genre, value.release_date, value.author, value.journal)
+        entry = "{}\t{}\t{}\t{}\t{}\t{}\t{}".format(value.id, value.copies, value.title, value.genre, value.release_date, value.author, value.journal)
         print(entry, file=new_file)
     print("<NEW DATASET>", file=new_file)
     # Adding each instance of Film
     for value in objectCreation.film_obj_dict.values():
-        entry = "{}\t{}\t{}\t{}\t{}\t{}".format(value.id, value.title, value.genre, value.release_date, value.studio, value.rt_score)
+        entry = "{}\t{}\t{}\t{}\t{}\t{}\t{}".format(value.id, value.copies, value.title, value.genre, value.release_date, value.studio, value.rt_score)
         print(entry, file=new_file)
     new_file.close()
     with open("items_test.txt", "r") as temp_file:
         print(temp_file.read())
-
 
 # for ID generation
 
@@ -96,7 +95,6 @@ def add_member():
     objectCreation.member_dict[new_member.id] = new_member
     # Rewriting members text file based on dictionary update
     rewrite_members()
-
 
 # Remove member function
 
@@ -144,7 +142,7 @@ def modify_member():
             print("Please enter the following details for the member you wish to modify:\n")
             while True:
                 try:
-                    mid = int(input("Member ID: ")) # input loops until an int is entered. Int must be a key in member_dict
+                    mid = int(input("Member ID: ")) # input loops until an int is entered. ID must be a key in member_dict
                     break
                 except ValueError:
                     print("Invalid input. Please enter a number for Member ID.")
@@ -235,19 +233,32 @@ def browse_catalogue():
     """Displaying all of the items in the libraries"""
     print("The available books are: \n")
     for value in objectCreation.book_obj_dict.values():
-        print(value)
+        print(value, "\n")
     print("The available articles are: \n")
     for value in objectCreation.article_obj_dict.values():
-        print(value)
+        print(value, "\n")
     print("The available films are: \n")
     for value in objectCreation.film_obj_dict.values():
-        print(value)
-
-browse_catalogue()
+        print(value, "\n")
 
 
 def borrow_item():
-    pass
+    """Borrow an item from the library catalogue"""
+    print("Please enter the following details for the item you would like to borrow: \n")
+    while True:
+        try:
+            iid = int(input("Item ID: ")) # input loops until an int is entered.
+            break
+        except ValueError:
+            print("Invalid input. Please enter a number for Item ID.")
+    # Requesting confirmation before removal
+    print("The item you have selected is: ")
+    print("#", objectCreation.items_dict[iid].id, objectCreation.items_dict[iid].title)
+    confirmation = input("Press y to confirm. Press n to return to previous menu.\n")
+    if confirmation == "y":
+        LMS_Classes.BorrowTransaction()
+
+
 
 def return_item():
     pass
