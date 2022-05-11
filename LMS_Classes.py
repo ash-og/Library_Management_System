@@ -134,8 +134,9 @@ class Film(Item):
         self.rt_score = rt_score
 
     def __str__(self):
-        result = self.title + " is a " + self.genre + " movie \n"
-        result += "It has a Rotten Tomatoes score of " + self.rt_score
+        result = "ID#: \t" + str(self.id) + "\n"
+        result += "Title:\t" + self.title + "\n"
+        result += "Rotten Tomatoes Score: \t" + self.rt_score + "\n"
         return result
 
 class BorrowTransaction(object):

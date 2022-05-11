@@ -64,15 +64,16 @@ def rewrite_items():
 
 # for ID generation
 
-
 def id_generation(dictionary):
     new_id = (max(dictionary.keys()) + 1)  # Finding the largest key in dictionary and adding one to it
     # print(id)
     return new_id
 
 
-# adding members
+# -------Staff Menu ---------------------------------------------------------------------------------
 
+
+# adding members
 
 def add_member():
     """Adding an instance of the Member class based on user input, then updating the dictionary and .txt file"""
@@ -96,8 +97,6 @@ def add_member():
     # Rewriting members text file based on dictionary update
     rewrite_members()
 
-
-# print(add_member())
 
 # Remove member function
 
@@ -135,11 +134,126 @@ def remove_member():
         except KeyError:
             print("Invalid Member ID. Please try again.\n")
 
+# Modifying a member
+
+def modify_member():
+    """Modifying user details"""
+    while True:
+        try:
+            # Requesting ID and Name of member to be
+            print("Please enter the following details for the member you wish to modify:\n")
+            while True:
+                try:
+                    mid = int(input("Member ID: ")) # input loops until an int is entered. Int must be a key in member_dict
+                    break
+                except ValueError:
+                    print("Invalid input. Please enter a number for Member ID.")
+            m_name = input("Member Full Name: ")
+                        # if the name and id entered, match a name and id in the dict, the program continues
+            if objectCreation.member_dict[mid].get_name().lower().strip() == m_name.lower():
+                    user_input = input("Which value would you like to modify?\n "
+                       "1. Name \n"
+                       "2. Member Type \n "
+                       "3. DOB \n"
+                       "4. Address \n"
+                       "5. Location \n"
+                       "6. Phone \n"
+                       "7. Email)?\n"
+                       "8. Quit\n")
+                    new_value = input("Please enter the updated value: ")
+                    if user_input == "1":
+                        objectCreation.member_dict[mid].set_name(new_value)
+                        rewrite_members()
+                        print("This member's name is now: ")
+                        print(objectCreation.member_dict[mid].get_name())
+                    elif user_input == "2":
+                        if new_value.lower().strip() != "s" or new_value.lower().strip() != "m":
+                            raise TypeError
+                        else:
+                            objectCreation.member_dict[mid].type = new_value
+                            rewrite_members()
+                            print("This member's type is now: ")
+                            print(objectCreation.member_dict[mid].type)
+                    elif user_input == "3":
+                        objectCreation.member_dict[mid].set_dob(new_value)
+                        rewrite_members()
+                        print("This member's DOB is now: ")
+                        print(objectCreation.member_dict[mid].get_dob())
+                    elif user_input == "4":
+                        objectCreation.member_dict[mid].set_address(new_value)
+                        rewrite_members()
+                        print("This member's address is now: ")
+                        print(objectCreation.member_dict[mid].get_address())
+                    elif user_input == "5":
+                        objectCreation.member_dict[mid].set_location(new_value)
+                        rewrite_members()
+                        print("This member's location is now: ")
+                        print(objectCreation.member_dict[mid].get_location())
+                    elif user_input == "6":
+                        objectCreation.member_dict[mid].set_phone(new_value)
+                        rewrite_members()
+                        print("This member's phone number is now: ")
+                        print(objectCreation.member_dict[mid].get_phone())
+                    elif user_input == "7":
+                        objectCreation.member_dict[mid].set_email(new_value)
+                        rewrite_members()
+                        print("This member's email is now: ")
+                        print(objectCreation.member_dict[mid].get_email())
+                    elif user_input == "8":
+                        print("Returning to previous menu\n")
+                        break
+                    else:
+                        print("Invalid option. Please try again.")
+            else:
+                raise ValueError
+        except ValueError:
+            print("We have no record of that member. Please check details and try again.\n")
+        except TypeError:
+            print("Not a valid type. Please try again.")
+
+def add_item():
+    pass
+
+def remove_item():
+    pass
+
+def add_library():
+    pass
+
+def remove_library():
+    pass
+
+
+
+# -------Member Menu ---------------------------------------------------------------------------------
+
 
 # For browsing the catalogue
 
 
 def browse_catalogue():
-    print("ID \t-\t Title \t\t-\t\t Author")
+    """Displaying all of the items in the libraries"""
+    print("The available books are: \n")
     for value in objectCreation.book_obj_dict.values():
         print(value)
+    print("The available articles are: \n")
+    for value in objectCreation.article_obj_dict.values():
+        print(value)
+    print("The available films are: \n")
+    for value in objectCreation.film_obj_dict.values():
+        print(value)
+
+browse_catalogue()
+
+
+def borrow_item():
+    pass
+
+def return_item():
+    pass
+
+def join_library():
+    pass
+
+def cancel_membership():
+    pass

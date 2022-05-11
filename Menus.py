@@ -24,7 +24,7 @@ def staff_menu():
             input("Press any key to continue..\n")
 
         elif user_input == "2":
-            pass
+            menuFunctions.modify_member()
             input("Press any key to continue..\n")
         elif user_input == "5":
             print("Returning to main menu...")
@@ -45,6 +45,7 @@ def member_menu():
                            "6. Quit Program \n")
         if user_input == "1":
             pass
+
             input("Press any key to continue..\n")
         elif user_input == "2":
             pass

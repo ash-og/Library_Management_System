@@ -1,5 +1,6 @@
 import os
 import LMS_Classes
+import menuFunctions
 import objectCreation
 # import menuFunctions
 
@@ -25,6 +26,61 @@ import objectCreation
 #
 # with open("test.txt", "r") as test_file:
 #     print(test_file.read())
-print(objectCreation.book_obj_dict[1])
-my_instance = objectCreation.book_obj_dict[1]
-print(my_instance.release_date)
+# print(objectCreation.book_obj_dict[1])
+# my_instance = objectCreation.book_obj_dict[1]
+# print(my_instance.release_date)
+#
+# m_attr = "set_name()"
+# m_value = "Sarah Young"
+# objectCreation.member_dict[6].m_attr(m_value)
+# print(objectCreation.member_dict[6].get_name())
+#
+# def attr_input_menu():
+#     user_input = input("Which value would you like to modify?\n "
+#                        "1. Name \n"
+#                        "2. Member Type \n "
+#                        "3. DOB \n"
+#                        "4. Address \n"
+#                        "5. Location \n"
+#                        "6. Phone \n"
+#                        "7. Email)?\n"
+#                        "8. Quit\n")
+#     new_value = input("Please enter the updated value: ")
+#     if user_input == "1":
+#         m_attr = name
+#     elif user_input == "2":
+#         m_attr = m_type
+#     elif user_input == "3":
+#         m_attr = dob
+#     elif user_input == "4":
+#         m_attr = address
+#     elif user_input == "5":
+#         m_attr = location
+#     elif user_input == "6":
+#         m_attr = phone
+#     elif user_input == "7":
+#         m_attr = email
+#     elif user_input == "8":
+#         print("Returning to previous menu\n")
+#         break
+#     else:
+#         print("Invalid option. Please try again.")
+
+
+
+
+mid = 6
+# new_value = "Sarah Young"
+# objectCreation.member_dict[mid].set_name(new_value)
+# print(objectCreation.member_dict[mid].get_name())
+# menuFunctions.rewrite_members()
+new_value = "0982738482"
+# print(objectCreation.member_dict[mid].type)
+# objectCreation.member_dict[mid].type = new_value
+# print(objectCreation.member_dict[mid].type)
+# print(objectCreation.member_dict[mid])
+# menuFunctions.rewrite_members()
+objectCreation.member_dict[mid].set_phone(new_value)
+menuFunctions.rewrite_members()
+print("This member's address is now: ")
+print(objectCreation.member_dict[mid].get_phone())
