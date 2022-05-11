@@ -104,4 +104,23 @@ import objectCreation
 
 
 
-print(datetime.date.today().strftime("%d-%m-%Y"))
+# print(datetime.date.today().strftime("%d-%m-%Y"))
+mid = 6
+iid = 1
+# Generating a new Borrow Transaction ID
+new_id = menuFunctions.id_generation(objectCreation.borrow_dict)
+# Assigning member and item name variables
+# m_name = objectCreation.member_dict[mid].get_name()
+# i_name = objectCreation.items_dict[iid].title
+# # Generating dates
+# dates = menuFunctions.date_generator()
+# start_date = dates[0]
+# return_date = dates[1]
+# # Creating a new borrow transaction based on the above info
+# new_transaction = LMS_Classes.BorrowTransaction(new_id, mid, m_name, iid, i_name, start_date, return_date)
+# objectCreation.borrow_dict[new_id] = new_transaction
+
+
+
+a = 1 in objectCreation.book_obj_dict.keys()
+print(a)

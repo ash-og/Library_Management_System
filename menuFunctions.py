@@ -1,6 +1,8 @@
+import os
+import datetime
 import LMS_Classes
 import objectCreation
-import os
+
 
 
 # Removing a data file and creating a new version
@@ -31,8 +33,6 @@ def rewrite_libraries():
         entry = "{}\t{}\t{}\t{}\t{}\t{}\t{}".format(value.id, value.name, value.address, value.location, value.phone, value.email, value.website)
         print(entry, file=new_file)
     new_file.close()
-    with open("library.txt", "r") as temp_file:
-        print(temp_file.read())
 
 
 def rewrite_items():
@@ -58,15 +58,56 @@ def rewrite_items():
         entry = "{}\t{}\t{}\t{}\t{}\t{}\t{}".format(value.id, value.copies, value.title, value.genre, value.release_date, value.studio, value.rt_score)
         print(entry, file=new_file)
     new_file.close()
-    with open("items_test.txt", "r") as temp_file:
-        print(temp_file.read())
+
+
+def rewrite_borrowing():
+    """Removing borrowing.txt and creating a new version"""
+    try:
+        os.remove("borrowing.txt")
+    except FileNotFoundError:
+        pass
+    new_file = open("borrowing.txt", "w+")
+    for value in objectCreation.borrow_dict.values():
+        entry = "{}\t{}\t{}\t{}\t{}\t{}\t{}".format(value.id, value.member_id, value.m_name, value.item_id, value.i_name, value.start_date, value.return_date)
+        print(entry, file=new_file)
+    new_file.close()
+
 
 # for ID generation
 
 def id_generation(dictionary):
+    """Generates a new id based on the highest existing id"""
     new_id = (max(dictionary.keys()) + 1)  # Finding the largest key in dictionary and adding one to it
     # print(id)
     return new_id
+
+# Date generation
+
+def date_generator():
+    """Generates a today's date and a date +2weeks"""
+    start_date = datetime.date.today()
+    return_date = start_date + datetime.timedelta(days=14)
+    return (start_date, return_date)
+
+def copy_decrease(item_id):
+    """Decreases available copies of an item"""
+    if item_id in objectCreation.book_obj_dict.keys():
+        objectCreation.book_obj_dict[item_id].copies = int(objectCreation.book_obj_dict[item_id].copies)-1
+    if item_id in objectCreation.article_obj_dict.keys():
+        objectCreation.article_obj_dict[item_id].copies = int(objectCreation.article_obj_dict[item_id].copies)-1
+    if item_id in objectCreation.film_obj_dict.keys():
+        objectCreation.film_obj_dict[item_id].copies = int(objectCreation.film_obj_dict[item_id].copies)-1
+    rewrite_items()
+
+def copy_increase(item_id):
+        """Increases available copies of an item"""
+        if item_id in objectCreation.book_obj_dict.keys():
+            objectCreation.book_obj_dict[item_id].copies = int(objectCreation.book_obj_dict[item_id].copies)+1
+        if item_id in objectCreation.article_obj_dict.keys():
+            objectCreation.article_obj_dict[item_id].copies = int(objectCreation.article_obj_dict[item_id].copies)+1
+        if item_id in objectCreation.film_obj_dict.keys():
+            objectCreation.film_obj_dict[item_id].copies = int(objectCreation.film_obj_dict[item_id].copies)+1
+        rewrite_items()
 
 
 # -------Staff Menu ---------------------------------------------------------------------------------
@@ -244,23 +285,67 @@ def browse_catalogue():
 
 def borrow_item():
     """Borrow an item from the library catalogue"""
-    print("Please enter the following details for the item you would like to borrow: \n")
+    print("Please enter the following details: \n")
     while True:
         try:
-            iid = int(input("Item ID: ")) # input loops until an int is entered.
-            break
-        except ValueError:
-            print("Invalid input. Please enter a number for Item ID.")
-    # Requesting confirmation before removal
-    print("The item you have selected is: ")
-    print("#", objectCreation.items_dict[iid].id, objectCreation.items_dict[iid].title)
-    confirmation = input("Press y to confirm. Press n to return to previous menu.\n")
-    if confirmation == "y":
-        LMS_Classes.BorrowTransaction()
+            while True:
+                try:
+                    # input loops until an int is entered.
+                    mid = int(input("Your Member ID: "))
+                    break
+                except ValueError:
+                    print("Invalid input. Please enter a number for Member ID.")
+            while True:
+                try:
+                    iid = int(input("Item ID: "))
+                    break
+                except ValueError:
+                    print("Invalid input. Please enter a number for Item ID.")
+            # Requesting confirmation before continuing
+            print("You are member: ")
+            print("#", objectCreation.member_dict[mid].id, objectCreation.member_dict[mid].get_name())
+            print("The item you have selected to borrow is: ")
+            print("#", objectCreation.items_dict[iid].id, objectCreation.items_dict[iid].title)
+            confirmation = input("Press y to confirm. Press n to return to previous menu.\n")
 
-
+            if confirmation == "y":
+                # Generating a new Borrow Transaction ID
+                new_id = id_generation(objectCreation.borrow_dict)
+                # Assigning member and item name variables
+                m_name, i_name = objectCreation.member_dict[mid].get_name(), objectCreation.items_dict[iid].title
+                # Generating dates
+                dates = date_generator()
+                start_date = dates[0]
+                return_date = dates[1]
+                # Creating a new borrow transaction based on the above info
+                new_transaction = LMS_Classes.BorrowTransaction(new_id, mid, m_name, iid, i_name, start_date, return_date)
+                objectCreation.borrow_dict[new_id] = new_transaction
+                rewrite_borrowing()
+                # Subtracting copies available of item
+                copy_decrease(iid)
+                # Transaction receipt
+                print("Transaction details: ")
+                print(new_transaction)
+                break
+            else:
+                break
+        except KeyError:
+            print("Invalid ID. Please try again.\n")
 
 def return_item():
+    # Ask user for their member id and the item id
+
+    # Check if they both appear in borrow_dict
+
+    # Ask for confirmation
+
+    # Remove from borrowing
+
+    # Increase the copies count
+
+    # print receipt
+
+
     pass
 
 def join_library():

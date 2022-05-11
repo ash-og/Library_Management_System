@@ -44,11 +44,16 @@ def member_menu():
                            "5. Return to Main Menu\n"
                            "6. Quit Program \n")
         if user_input == "1":
-            pass
-
+            menuFunctions.browse_catalogue()
             input("Press any key to continue..\n")
         elif user_input == "2":
-            pass
+            menuFunctions.borrow_item()
+            input("Press any key to continue..\n")
+        elif user_input == "3":
+            input("Press any key to continue..\n")
+        elif user_input == "4":
+            input("Press any key to continue..\n")
+        elif user_input == "5":
             input("Press any key to continue..\n")
         elif user_input == "6":
             print("Quitting program...")

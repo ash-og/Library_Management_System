@@ -162,7 +162,10 @@ class BorrowTransaction(object):
             self.return_date = return_date
 
     def __str__(self):
-        result = self.m_name + " borrowed " + self.i_name
+        result = "Member: \t" + self.m_name + "\n"
+        result += "Item: \t" + self.i_name + "\n"
+        result += "Borrow Date: \t" + self.start_date.strftime("%d-%m-%Y") + "\n"
+        result += "Return Date: \t" + self.return_date.strftime("%d-%m-%Y") + "\n"
         return result
 
 # class Location(object):
