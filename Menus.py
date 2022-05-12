@@ -50,10 +50,13 @@ def member_menu():
             menuFunctions.borrow_item()
             input("Press any key to continue..\n")
         elif user_input == "3":
+            menuFunctions.return_item()
             input("Press any key to continue..\n")
         elif user_input == "4":
+            menuFunctions.add_member()
             input("Press any key to continue..\n")
         elif user_input == "5":
+            menuFunctions.cancel_membership()
             input("Press any key to continue..\n")
         elif user_input == "6":
             print("Quitting program...")

@@ -1,9 +1,9 @@
 <NEW DATASET>
-1	4	Da Vinci Code,The	F2.1 Crime, Thriller & Adventure	Monday, March 1, 2004	Brown, Dan	Transworld Grp
+1	0	Da Vinci Code,The	F2.1 Crime, Thriller & Adventure	Monday, March 1, 2004	Brown, Dan	Transworld Grp
 2	4	Harry Potter and the Deathly Hallows	Y2.1 Children's Fiction	Saturday, July 21, 2007	Rowling, J.K.	Bloomsbury Grp
-3	3	Harry Potter and the Philosopher's Stone	Y2.1 Children's Fiction	Thursday, June 26, 1997	Rowling, J.K.	Bloomsbury Grp
-4	2	Harry Potter and the Order of the Phoenix	Y2.1 Children's Fiction	Saturday, April 26, 2003	Rowling, J.K.	Bloomsbury Grp
-5	1	Fifty Shades of Grey	F2.5 Romance & Sagas	Thursday, April 12, 2012	James, E. L.	Random House Grp
+3	2	Harry Potter and the Philosopher's Stone	Y2.1 Children's Fiction	Thursday, June 26, 1997	Rowling, J.K.	Bloomsbury Grp
+4	6	Harry Potter and the Order of the Phoenix	Y2.1 Children's Fiction	Saturday, April 26, 2003	Rowling, J.K.	Bloomsbury Grp
+5	3	Fifty Shades of Grey	F2.5 Romance & Sagas	Thursday, April 12, 2012	James, E. L.	Random House Grp
 <NEW DATASET>
 100	5	Adult ADHD: A new disease?	Psychology	2016	Zalsman G, Shilton T.	Int J Psychiatry Clin Pract
 101	4	Neurobiology of ADHD	Psychology	2009	Tripp G, Wickens JR.	Neuropharmacology
