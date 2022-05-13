@@ -116,7 +116,6 @@ class Book(Item):
         Item.__init__(self, id, copies, title, genre, date)
         self.author = author
         self.publisher = publisher
-        self.copies = copies
 
     def __str__(self):
         result = "ID#: \t" + str(self.id) + "\n"
@@ -133,7 +132,6 @@ class Article(Item):
         Item.__init__(self, id, copies, title, genre, date)
         self.author = author
         self.journal = journal
-        self.copies = copies
 
     def __str__(self):
         result = "ID#: \t" + str(self.id) + "\n"
@@ -149,7 +147,6 @@ class Film(Item):
         Item.__init__(self, id, copies, title, genre, date)
         self.studio = studio
         self.rt_score = rt_score
-        self.copies = copies
 
     def __str__(self):
         result = "ID#: \t" + str(self.id) + "\n"
