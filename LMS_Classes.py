@@ -34,7 +34,11 @@ class Member(object):
         self.__borrow_list = []
 
     def __str__(self):
-        return "Member ID #{} is called {}, and is an {} member.".format(self.id, self.__name, self.type)
+        result = "ID#: \t" + str(self.id) + "\n"
+        result += "Name:\t" + self.__name + "\n"
+        result += "Member Type: \t" + self.type.upper() + "\n"
+        result += "Email: \t" + str(self.__email) + "\n"
+        return result
 
     def get_name(self):
         return self.__name
@@ -178,3 +182,12 @@ class BorrowTransaction(object):
         items_borrowed = "Transaction ID: \t" + str(self.id) + "\n"
         items_borrowed += "Item: \t" + self.i_name + "\n"
         return items_borrowed
+
+    def overdue(self):
+        today = datetime.datetime.today()
+        if datetime.datetime.strptime(self.return_date, "%d-%m-%Y") < today:
+            overdue_str = "Transaction ID: \t" + str(self.id) + "\n"
+            overdue_str += "Item: \t" + self.i_name + "\n"
+            overdue_str += "Member: \t" + self.m_name + "\n"
+            overdue_str += "Return Date: \t" + self.return_date + "\n"
+            return overdue_str

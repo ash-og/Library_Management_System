@@ -45,29 +45,29 @@ def menu_functions_test():
 
     # rewrite functions
     # rewrite_members() test
-    with open("members.txt", "r") as temp_file:
+    with open("../members.txt", "r") as temp_file:
         print(temp_file.read())
     rewrite_members()
-    with open("members.txt", "r") as temp_file:
+    with open("../members.txt", "r") as temp_file:
         print(temp_file.read())
     # rewrite_libraries() test
-    with open("library.txt", "r") as temp_file:
+    with open("../library.txt", "r") as temp_file:
         print(temp_file.read())
     rewrite_libraries()
-    with open("library.txt", "r") as temp_file:
+    with open("../library.txt", "r") as temp_file:
         print(temp_file.read())
     # rewrite_items() test
-    with open("items_test.txt", "r") as temp_file:
+    with open("../items_test.txt", "r") as temp_file:
         print(temp_file.read())
     rewrite_items()
-    with open("items_test.txt", "r") as temp_file:
+    with open("../items_test.txt", "r") as temp_file:
         print(temp_file.read())
 
     # rewrite_borrowing() test
-    with open("borrowing.txt", "r") as temp_file:
+    with open("../borrowing.txt", "r") as temp_file:
         print(temp_file.read())
     rewrite_borrowing()
-    with open("borrowing.txt", "r") as temp_file:
+    with open("../borrowing.txt", "r") as temp_file:
         print(temp_file.read())
 
     # copy_decrease test

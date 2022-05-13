@@ -8,7 +8,9 @@ def staff_menu():
                            "1. Add or Remove Member\n"
                            "2. Modify Member\n"
                            "3. Add or Remove Item\n"
-                           "4. Return to Main Menu\n")
+                           "4. View Member List\n"
+                           "5. View Overdue Books\n"
+                           "6. Return to Main Menu\n")
         if user_input == "1":
             add_or_remove = input("Would you like to add or remove?\n")
             if add_or_remove.lower() == "add":
@@ -34,6 +36,16 @@ def staff_menu():
             input("Press any key to continue..\n")
 
         elif user_input == "4":
+            menuFunctions.member_list()
+            input("Press any key to continue..\n")
+            break
+
+        elif user_input == "5":
+            menuFunctions.all_overdue_books()
+            input("Press any key to continue..\n")
+            break
+
+        elif user_input == "6":
             print("Returning to main menu...")
             break
         else:
@@ -47,7 +59,7 @@ def member_menu():
                            "1. Browse Catalogue\n"
                            "2. Borrow Catalogue Item\n"
                            "3. Return Catalogue Item\n"
-                           "4. View Items I'm Currently Borrowing\n"
+                           "4. View Items Currently Borrowed\n"
                            "5. View my Overdue Items\n"
                            "6. Join Library\n"
                            "7. Cancel Membership\n"

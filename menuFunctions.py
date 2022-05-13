@@ -17,8 +17,6 @@ def rewrite_members():
         entry = "{}\t{}\t{}\t{}\t{}\t{}\t{}\t{}".format(value.id, value.get_name(), value.type, value.get_dob(), value.get_address(), value.get_location(), value.get_phone(), value.get_email())
         print(entry, file=new_file)
     new_file.close()
-    with open("members.txt", "r") as temp_file:
-        print(temp_file.read())
 
 
 def rewrite_libraries():
@@ -224,14 +222,14 @@ def modify_member():
             m_name = input("Member Full Name: ")
             # if the name and id entered, match a name and id in the dict, the program continues
             if objectCreation.member_dict[mid].get_name().lower().strip() == m_name.lower():
-                user_input = input("Which value would you like to modify?\n "
+                user_input = input("Which value would you like to modify?\n"
                                    "1. Name \n"
-                                   "2. Member Type \n "
+                                   "2. Member Type \n"
                                    "3. DOB \n"
                                    "4. Address \n"
                                    "5. Location \n"
                                    "6. Phone \n"
-                                   "7. Email)?\n"
+                                   "7. Email\n"
                                    "8. Quit\n")
                 new_value = input("Please enter the updated value: ")
                 if user_input == "1":
@@ -239,39 +237,46 @@ def modify_member():
                     rewrite_members()
                     print("This member's name is now: ")
                     print(objectCreation.member_dict[mid].get_name())
+                    break
                 elif user_input == "2":
-                    if new_value.lower().strip() != "s" or new_value.lower().strip() != "m":
+                    if new_value.lower().strip() != "s" and new_value.lower().strip() != "m":
                         raise TypeError
                     else:
                         objectCreation.member_dict[mid].type = new_value
                         rewrite_members()
                         print("This member's type is now: ")
                         print(objectCreation.member_dict[mid].type)
+                        break
                 elif user_input == "3":
                     objectCreation.member_dict[mid].set_dob(new_value)
                     rewrite_members()
                     print("This member's DOB is now: ")
                     print(objectCreation.member_dict[mid].get_dob())
+                    break
                 elif user_input == "4":
                     objectCreation.member_dict[mid].set_address(new_value)
                     rewrite_members()
                     print("This member's address is now: ")
                     print(objectCreation.member_dict[mid].get_address())
+                    break
                 elif user_input == "5":
                     objectCreation.member_dict[mid].set_location(new_value)
                     rewrite_members()
                     print("This member's location is now: ")
                     print(objectCreation.member_dict[mid].get_location())
+                    break
                 elif user_input == "6":
                     objectCreation.member_dict[mid].set_phone(new_value)
                     rewrite_members()
                     print("This member's phone number is now: ")
                     print(objectCreation.member_dict[mid].get_phone())
+                    break
                 elif user_input == "7":
                     objectCreation.member_dict[mid].set_email(new_value)
                     rewrite_members()
                     print("This member's email is now: ")
                     print(objectCreation.member_dict[mid].get_email())
+                    break
                 elif user_input == "8":
                     print("Returning to previous menu\n")
                     break
@@ -283,6 +288,8 @@ def modify_member():
             print("We have no record of that member. Please check details and try again.\n")
         except TypeError:
             print("Not a valid type. Please try again.")
+        except KeyError:
+            print("Not a valid member ID. Please try again.")
 
 
 def add_book():
@@ -370,6 +377,8 @@ def remove_book(item_id):
     confirmation = input("Press y to confirm. Press n to return to previous menu.\n")
     if confirmation == "y":
         objectCreation.book_obj_dict.pop(item_id)
+        rewrite_items()
+        print("Item has been removed.")
 
 
 def remove_article(item_id):
@@ -379,6 +388,8 @@ def remove_article(item_id):
     confirmation = input("Press y to confirm. Press n to return to previous menu.\n")
     if confirmation == "y":
         objectCreation.article_obj_dict.pop(item_id)
+        rewrite_items()
+        print("Item has been removed.")
 
 
 def remove_film(item_id):
@@ -388,26 +399,54 @@ def remove_film(item_id):
     confirmation = input("Press y to confirm. Press n to return to previous menu.\n")
     if confirmation == "y":
         objectCreation.film_obj_dict.pop(item_id)
+        rewrite_items()
+        print("Item has been removed.")
 
 
 def remove_item():
     """Removing an item"""
     # Selecting Item Type
-    item_type = input("Which item would you like to remove:\n"
-                      "1. Book \n"
-                      "2. Article \n"
-                      "3. Film \n")
-    item_id = int(input("Please enter the item ID: "))
-    # Removing Item based on type
-    if item_type == "1":
-        remove_book(item_id)
-    elif item_type == "2":
-        remove_article(item_id)
-    elif item_type == "3":
-        remove_film(item_id)
-    # Rewriting members text file based on dictionary update
-    rewrite_items()
-    print("Item has been removed.")
+    while True:
+        try:
+            item_type = input("Which item would you like to remove:\n"
+                              "1. Book \n"
+                              "2. Article \n"
+                              "3. Film \n"
+                              "4. Return to previous menu\n")
+            # Removing Item based on type
+            if item_type == "1":
+                item_id = int(input("Please enter the item ID: "))
+                remove_book(item_id)
+                break
+            elif item_type == "2":
+                item_id = int(input("Please enter the item ID: "))
+                remove_article(item_id)
+                break
+            elif item_type == "3":
+                item_id = int(input("Please enter the item ID: "))
+                remove_film(item_id)
+                break
+            elif item_type == "4":
+                print("Returning to previous menu")
+                break
+            else:
+                print("Invalid input. Try again.")
+        except ValueError:
+            print("Item ID must be a number. Please try again.")
+        except KeyError:
+            print("Not a valid item ID. Please try again.")
+
+
+def member_list():
+    """View all members of the library system"""
+    for value in objectCreation.member_dict.values():
+        print(value)
+
+
+def all_overdue_books():
+    """View all currently overdue books"""
+    for value in objectCreation.borrow_dict.values():
+        print(value.overdue())
 
 
 # -------Member Menu ---------------------------------------------------------------------------------
