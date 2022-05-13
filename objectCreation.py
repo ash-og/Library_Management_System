@@ -99,6 +99,3 @@ for m in member_dict.values():
 
 # Testing the above code
 # tests.object_creation_tests(item_list, book_list, article_list, book_obj_dict, article_obj_dict, film_obj_dict, items_dict, library_list, member_list, library_dict, member_dict, borrow_list, borrow_dict)
-
-# member_dict[5].view_borrow_list()
-# member_dict[5].overdue_list()
